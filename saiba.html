@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - NatBe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-title">
+            <h1>Entre em Contato</h1>
+        </div>
+    </header>
+
+    <section class="text-image-section">
+        <div class="text-content">]
+          <h2>Oque é NatBe</h2>
+          <p>O NatBe é um site de saúde e bem-estar voltado para ajudar pessoas a lidar com a rotina e os desafios cotidianos de forma prática e positiva. Com um visual que combina tons de verde e dourado, o site oferece uma experiência acolhedora e moderna.</p>
+          <p>Na tela inicial, o NatBe possui um menu lateral com opções como dieta, plantio, rotina, cuidados para cada idade e esportes. Cada item leva a uma página com informações detalhadas, incluindo prós, contras, tabelas de benefícios e imagens ilustrativas. O menu também inclui seções específicas para usuários com dicas para diferentes faixas etárias, além de uma área focada em atividades físicas.</p>
+            <h2>Nosso Time está Aqui para Ajudar</h2>
+            <p>Se você tiver qualquer dúvida ou precisar de ajuda, não hesite em entrar em contato conosco. Estamos prontos para oferecer o melhor atendimento e solucionar suas questões de forma rápida e eficaz.</p>
+            <p>Nosso objetivo é garantir uma experiência excepcional para você, seja em relação aos nossos produtos ou serviços. Fique à vontade para nos enviar uma mensagem com suas sugestões ou reclamações.</p>
+        </div>
+        <div class="image-content">
+            <img src="product1.jpeg" alt="Imagem de Contato" />
+        </div>
+    </section>
+
+    <section class="form-section">
+        <h2>Formulário de Contato</h2>
+        <form action="#" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required placeholder="Digite seu nome">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Digite seu e-mail">
+
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Digite sua mensagem"></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+        <a href="index.html">
+          <button class="welcome-button">Voltar</button>
+      </a>
+    </section>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .text-image-section {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .image-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .form-section {
+            max-width: 500px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+</body>
+</html>

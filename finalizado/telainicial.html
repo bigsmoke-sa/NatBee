@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NatBe - Saúde e Bem-estar</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Cabeçalho com Logo e Título Centralizados -->
+  <header>
+    <div class="logo-title-center">
+      <img src="logo.png" alt="Logo NatBe" class="logo-img">
+      <h1 class="site-title">NATbe</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" placeholder="Buscar...">
+    </div>
+  </header>
+
+  <!-- Menu Lateral -->
+  <nav class="sidebar" id="sidebar">
+    <ul>
+      <li>Dieta</li>
+      <li>Rotina Saudável</li>
+      <li>Saúde no Trabalho
+        <ul class="submenu">
+          <li>Direito Trabalhista</li>
+          <li>Como Conseguir um Bom Trabalho</li>
+        </ul>
+      </li>
+      <li>Esportes</li>
+      <li>Cuidados para Cada Idade
+        <ul class="submenu">
+          <li>Criança</li>
+          <li>Adulto</li>
+          <li>Idoso</li>
+        </ul>
+      </li>
+      <li>Natureza
+        <ul class="submenu">
+          <li>Vegetação</li>
+          <li>Clima</li>
+          <li>Meio Ambiente</li>
+        </ul>
+      </li>
+      <li class="highlight">Usuários</li>
+    </ul>
+  </nav>
+
+  <!-- Botão de Imagem para abrir Menu -->
+  <div class="menu-icon" onclick="toggleMenu()">
+    <img src="menu-icon.png" alt="Abrir Menu">
+  </div>
+
+  <!-- Imagem Central com Logo e Frase -->
+  <div class="central-image">
+    <img src="imagemcentral.jpg" alt="Imagem Central" class="background-image">
+    <div class="overlay-text">
+      <img src="logo.png" alt="Logo NatBe" class="central-logo">
+      <p class="slogan">Cuidando da sua saúde e bem-estar, naturalmente.</p>
+    </div>
+  </div>
+
+  <!-- Script para abrir/fechar o menu -->
+  <script>
+    function toggleMenu() {
+      const sidebar = document.getElementById("sidebar");
+      sidebar.classList.toggle("open");
+    }
+  </script>
+
+</body>
+</html>

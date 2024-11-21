@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Compra</title>
+  <style>
+    /* Oculta o formulário inicialmente */
+    .purchase-form {
+        display: none;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        width: 300px;
+        margin: 20px auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Estilos para o formulário e labels */
+    label, select, button {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    /* Mensagem de confirmação de compra */
+    .confirmation-message {
+        display: none;
+        text-align: center;
+        font-size: 1.2em;
+        color: green;
+        margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Formulário de Compra -->
+  <section id="purchaseForm" class="purchase-form">
+    <h2>Formulário de Compra</h2>
+    <form onsubmit="finalizePurchase(event)">
+        <label>Produto:</label>
+        <span id="productName">Produto Exemplo</span>
+
+        <label>Preço Bruto:</label>
+        <span id="productPrice">R$ 100,00</span>
+
+        <label>Preço com Imposto:</label>
+        <span id="productPriceWithTax">R$ 110,00</span>
+
+        <label>Frete:</label>
+        <span id="shipping">R$ 10,00</span>
+
+        <label>Preço Total:</label>
+        <span id="totalPrice">R$ 120,00</span>
+
+        <label for="paymentMethod">Forma de Pagamento:</label>
+        <select id="paymentMethod" name="paymentMethod">
+            <option value="pix">Pix</option>
+            <option value="creditCard">Cartão de Crédito</option>
+        </select>
+
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" required>
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" placeholder="Digite seu CEP" required>
+
+        <button type="submit">Finalizar Compra</button>
+    </form>
+  </section>
+
+  <!-- Mensagem de confirmação -->
+  <div id="confirmationMessage" class="confirmation-message">
+    Sua compra foi realizada com sucesso!
+  </div>
+
+  <script>
+    // Função para exibir o formulário ao carregar a página
+    window.onload = function() {
+      document.getElementById("purchaseForm").style.display = "block";
+    };
+
+    // Função para finalizar a compra e exibir a mensagem de confirmação
+    function finalizePurchase(event) {
+      event.preventDefault(); // Impede o envio do formulário
+
+      // Oculta o formulário de compra
+      document.getElementById("purchaseForm").style.display = "none";
+
+      // Exibe a mensagem de confirmação
+      document.getElementById("confirmationMessage").style.display = "block";
+
+      // Redireciona para a página de compra após alguns segundos
+      setTimeout(function() {
+        window.location.href = "compra.html"; // Substitua com o link da página de compra
+      }, 3000); // 3000 ms = 3 segundos
+    }
+  </script>
+
+</body>
+</html>

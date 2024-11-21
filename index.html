@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatBe - Saúde e Bem-estar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Barra de Pesquisa e Logo -->
+    <header>
+        <div class="logo-title">
+            <h1>NatBe</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="searchBar" class="search-bar" placeholder="Pesquise aqui..." />
+        </div>
+    </header>
+
+    <!-- Imagem para abrir o menu -->
+    <div class="menu-icon" onclick="toggleMenu()">
+        <img src="menu-icon.png" alt="Menu">
+    </div>
+
+    <!-- Menu lateral -->
+    <aside id="sideMenu" class="side-menu">
+        <h2>NatBe</h2>
+        <ul>
+            <li><a href="dieta.html">Dieta</a></li>
+            <li><a href="compra.html">Compra</a></li>
+            <li><a href="plantiu.html">Plantio</a></li>
+            <li><a href="saudetr.html">Rotina Saudavel</a>
+            <li><a href="saude.html">Vida Profissional</a></li>
+            
+            <li><a href="#cuidados">Cuidados com Todos</a> </li>
+             <li><a href="#criancas">Crianças</a></li>
+             <li><a href="#idosos">Idosos</a></li>
+             <li><a href="#adultos">Adultos</a></li>
+            <li><a href="cadastro.html">Usuários</a></li>
+        </ul>
+        <button class="close-menu" onclick="closeMenu()">Fechar</button>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main>
+        <section id="welcome">
+            <div class="image-container">
+                <img src="product9.jpg" alt="Imagem de boas-vindas">
+                <div class="content-overlay">
+                    <h1>Bem-vindo ao NatBe</h1>
+                    <p>Nosso objetivo é ajudar você com saúde e bem-estar em sua rotina e nos desafios do dia a dia.</p>
+                    <a href="saiba.html">
+                        <button class="welcome-button">Saiba Mais</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+        <!-- Objetivo -->
+        <section class="info-section">
+            <div class="image">
+                <img src="objetivo-imagem.jpg" alt="Imagem do Objetivo">
+            </div>
+            <div class="text">
+                <h2>Objetivo</h2>
+                <p>O nosso objetivo é fornecer informações e ferramentas úteis para melhorar a qualidade de vida dos nossos usuários. Queremos ser uma fonte de inspiração e apoio no dia a dia, ajudando cada um a atingir suas metas de saúde e bem-estar, com dicas práticas e motivação constante.</p>
+            </div>
+        </section>
+
+        <!-- Materiais e Métodos -->
+        <section class="info-section">
+            <div class="image">
+                <img src="materiais-metodos-imagem.jpg" alt="Imagem de Materiais e Métodos">
+            </div>
+            <div class="text">
+                <h2>Criação</h2>
+                <p>Utilizamos uma abordagem integrada de pesquisa e conteúdo baseado em fontes confiáveis e estudos recentes na área de saúde e bem-estar. Através de parcerias com profissionais da área, oferecemos informações de qualidade que podem ser aplicadas de forma prática na vida diária. Nosso site também oferece ferramentas interativas para ajudar no acompanhamento do progresso de hábitos saudáveis.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("sideMenu").classList.toggle("open");
+        }
+
+        function closeMenu() {
+            document.getElementById("sideMenu").classList.remove("open");
+        }
+    </script>
+</body>
+</html>

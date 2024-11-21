@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página com Imagem e Texto</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        /* Estilo da seção com imagem e texto */
+        .content {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .content img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+
+        .text {
+            max-width: 400px;
+            text-align: left;
+            color: #555;
+        }
+
+        /* Responsivo */
+        @media (max-width: 600px) {
+            .content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .content img {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+
+            .text {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Plantio</h1>
+        
+        <div class="content">
+            <img src="dieta.jpeg" alt="Descrição da Imagem">
+            <div class="text">
+                <p>
+                    Este é o texto que será exibido ao lado da imagem. Você pode incluir informações sobre o conteúdo da imagem ou qualquer descrição relevante.
+                </p>
+                <p>
+                    Adicione mais texto conforme necessário. Este layout ajuda a destacar o conteúdo visual e a mantê-lo harmonioso com o texto descritivo.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 600px;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        .product-details p {
+            margin: 8px 0;
+            color: #555;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .buttons a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 16px;
+            width: 45%;
+        }
+
+        .back-button {
+            background-color: #28a745;
+        }
+
+        .form-button {
+            background-color: #ff4b4b;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Detalhes do Produto</h1>
+
+        <!-- Imagem do Produto -->
+        <img src="product4.jpeg" alt="Imagem do Produto" class="product-image">
+
+        <!-- Informações do Produto -->
+        <div class="product-details">
+            <p><strong>Nome do Produto:</strong> Nome Exemplo</p>
+            <p><strong>Código:</strong> 123456</p>
+            <p><strong>Produtor:</strong> Empresa Exemplo</p>
+            <p><strong>Fornecedor:</strong> Fornecedor Exemplo</p>
+            <p><strong>Localização:</strong> Campinas, SP</p>
+            <p><strong>Preço:</strong> R$ 99,90</p>
+        </div>
+
+        <!-- Botões -->
+        <div class="buttons">
+            <a href="compra.html" class="back-button">Voltar </a>
+            <a href="formulario.html" class="form-button">Comprar</a>
+        </div>
+    </div>
+
+</body>
+</html>
